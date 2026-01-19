@@ -93,7 +93,7 @@ export const entriesRelations = relations(entries, ({ one }) => ({
 }));
 
 export const tagsRelations = relations(tags, ({ many }) => ({
-    habits: many(habits)
+    habitTags: many(habitTags)
 }));
 
 export const habitTagsRelations = relations(habitTags, ({ one }) => ({
