@@ -20,7 +20,7 @@ export const register = async (req: Request<any, any, NewUser>, res: Response) =
             firstName: users.firstName,
             lastName: users.lastName,
             createdAt: users.createdAt
-        })
+        }) 
 
         const token = await generateToken({
             id: user.id,
